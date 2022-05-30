@@ -25,20 +25,21 @@ int main()
 {
 	int *tab, n;
 	
-	cout<<"Ile liczb chcesz posortowaæ? ";
+	cout<<"Ile liczb chcesz posortowac? ";
 	cin>>n;
 	
 	tab = new int [n];
 	
 	for(int i=0;i<n;i++)
 	{
+		cout<<i+1<<" liczba: ";
 		cin>>tab[i]; 
 	}
 	
 	selection_sort(tab,n); 
 	
 	for(int i=0;i<n;i++)
-	{Œ
+	{
 		cout<<tab[i]<<" ";
 	}
 		
